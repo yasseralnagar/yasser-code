@@ -1,0 +1,84 @@
+:root{
+  --BG: red
+}
+
+
+
+
+
+
+
+
+body {
+  background-color: var(--BG);
+} 
+
+h1{
+  font-size: 20px;
+}
+
+@media screen and (min-width:400px) and (max-width:768px) {
+  
+  body{
+    background-color: rgb(0, 255,0);
+  }
+  
+  h1{
+    font-size: 50px;
+  }
+
+  section{
+    display: flex;
+     flex-direction:column ;
+  }
+}
+
+@media screen and (min-width :768px) and (max-width: 992px){
+
+    body {
+     background-color: rgb(0, 255, 0);
+  }
+
+  h1{
+    font-size: 100px;
+  }
+
+  
+
+}
+
+@media screen and (min-width: 992px) and (max-width :1200px) {
+    body{
+      background-color: rgba(0, 59, 0, 0.836);
+ }
+
+ h1{
+  font-size: 120px;
+}
+
+
+
+
+
+
+
+
+section {
+  display: flex;
+  justify-content: space-around;
+}
+ 
+
+section div {
+  background: linear-gradient(to right , orange ,red);
+  width: 300px;
+  height: 300px;
+  margin-top: 50px;
+  text-align: center;
+  color: black;
+  transition: all .5s ease;
+  border-radius: 6px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0 ,0.2);
+}
+
+
